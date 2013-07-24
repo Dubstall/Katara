@@ -706,6 +706,7 @@ public class EntityRenderer
      * Enable lightmap in secondary texture unit
      */
     public void enableLightmap(double par1)
+
     {
         OpenGlHelper.setActiveTexture(OpenGlHelper.lightmapTexUnit);
         GL11.glMatrixMode(GL11.GL_TEXTURE);
@@ -714,7 +715,7 @@ public class EntityRenderer
         GL11.glScalef(var3, var3, var3);
         GL11.glTranslatef(8.0F, 8.0F, 8.0F);
         GL11.glMatrixMode(GL11.GL_MODELVIEW);
-        this.mc.func_110434_K().func_110577_a(this.field_110922_T);
+		this.mc.func_110434_K().func_110577_a(this.field_110922_T);
         GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_LINEAR);
         GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_LINEAR);
         GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_LINEAR);

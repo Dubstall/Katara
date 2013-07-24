@@ -7,9 +7,12 @@ import java.util.List;
 import java.util.Random;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
+import org.lwjgl.input.Keyboard;
 
 public class GuiIngame extends Gui
 {
+	
+	
     private static final ResourceLocation field_110329_b = new ResourceLocation("textures/misc/vignette.png");
     private static final ResourceLocation field_110330_c = new ResourceLocation("textures/gui/widgets.png");
     private static final ResourceLocation field_110328_d = new ResourceLocation("textures/misc/pumpkinblur.png");
@@ -41,7 +44,10 @@ public class GuiIngame extends Gui
     {
         this.mc = par1Minecraft;
         this.persistantChatGUI = new GuiNewChat(par1Minecraft);
+        
     }
+    
+    
 
     /**
      * Render the ingame overlay with quick icon bar, ...
